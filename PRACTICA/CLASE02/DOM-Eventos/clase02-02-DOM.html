@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Aplicación utilizando DOM</title>		
+
+		<script type="text/javascript" >
+			
+			function MostrarInfo()
+			{
+				var elementoDiv;
+				var elementoP;
+				var elementoPID;
+				
+				//OBTENGO TODOS LOS ELEMENTOS QUE SEAN DE TIPO 'P'
+				elementoP = document.getElementsByTagName("p");
+				
+				//OBTENGO TODOS LOS ELEMENTOS QUE SE LLAMEN 'MIDIV'
+				elementoDiv = document.getElementsByName("miDiv");
+				
+				//OBTENGO EL ELEMENTO CUYO ID SEA 'PARRAFO2'
+				elementoPID = document.getElementById("parrafo2");
+				
+				alert('Muestro el primer elemento "p".\nUtilizo "innerHTML".');
+				alert(elementoP[0].innerHTML);
+				
+				alert('Muestro el elemento "div".\nUtilizo "innerHTML".');				
+				alert(elementoDiv[0].innerHTML);
+				
+				alert('Muestro el segundo elemento "p".\nUtilizo "innerHTML".');
+				alert(elementoP[1].innerHTML);
+				
+				alert('Muestro el mismo elemento "p".\n' + 
+					'Lo obtengo con "document.getElementById(\'idElemento\')".');								
+				alert(elementoPID.innerHTML);
+				
+				alert("Cambio el tipo de letra en el segundo p\u00E1rrafo.\nModifico el atributo 'style'.");
+				
+				elementoPID.style.fontFamily="Currier New";
+				elementoPID.style.fontSize="15pt";
+				elementoPID.style.fontWeight="bold";
+				
+			}
+			
+			function CambiarColor(id)
+			{	
+				var elementoStrong = document.getElementById(id);
+							
+				elementoStrong.style.color="red";
+				
+			}
+			
+		</script>
+				
+	</head>
+
+	<body>
+	
+		<div name="miDiv" id="miDiv">
+			
+			<p name="miParrafo" id="parrafo1">
+			Técnicamente, un objeto de <strong id="negrita" >JavaScript</strong> es un array asociativo formado
+			por las propiedades y los métodos del objeto. Así, la forma más directa para definir las propiedades
+			y métodos de un objeto es mediante la notación de puntos de los arrays asociativos.
+			</p>
+			
+			<p id="parrafo2">
+			Un array asociativo es aquel en el que cada elemento no esté sociado a su posición numérica dentro del
+			array, sino que está asociado a otro valor específico. Los valores de los arrays normales se asocian a
+			índices que siempre son numéricos. Los valores de los arrays asociativos se asocian a claves que
+			siempre son cadenas de texto.
+			</p>
+			
+		</div>
+		
+		<input type="button" value="Ver Info" onclick="MostrarInfo()" />
+		<br />
+		<input type="button" name="btnBoton" id="btnBoton" value="Cambiar Color" 
+					onclick="CambiarColor('negrita')" />
+	</body>
+</html>

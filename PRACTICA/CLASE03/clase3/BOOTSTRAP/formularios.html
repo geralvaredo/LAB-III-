@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Formularios Bootstrap</title>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    </head>   
+    <body>
+      <div class="container">
+         <h1 class="page-header">Formulario 1 <small>(básico)</small></h1>
+         <p>Incluye un form con <code>role="form"</code>, conteniendo divs de clase <code>form-group</code>, cada uno de ellos incorporando los correspondientes <code>label</code> e <code>input</code>, estos últimos con sus class <code>form-control</code>.</p>
+         <form role="form">
+            <div class="form-group">
+              <label for="ejemplo_email_1">Email</label>
+              <input type="email" class="form-control" id="ejemplo_email_1"
+                     placeholder="Introduce tu email">
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_password_1">Contraseña</label>
+              <input type="password" class="form-control" id="ejemplo_password_1" 
+                     placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
+              <input type="file" id="ejemplo_archivo_1">
+              <p class="help-block">Ejemplo de texto de ayuda.</p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Activa esta casilla
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+         </form>
+         
+         <h1 class="page-header">Formulario 2 <small>(inline)</small></h1>
+         <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="ejemplo_email_2">Email</label>
+              <input type="email" class="form-control" id="ejemplo_email_2"
+                     placeholder="Introduce tu email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
+              <input type="password" class="form-control" id="ejemplo_password_2" 
+                     placeholder="Contraseña">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> No cerrar sesión
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Entrar</button>
+         </form>
+         
+         <h1 class="page-header">Formulario 3 <small>(horizontal)</small></h1>
+         <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
+              <div class="col-lg-10">
+                <input type="email" class="form-control" id="ejemplo_email_3"
+                       placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_password_3" class="col-lg-2 control-label">Contraseña</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="ejemplo_password_3" 
+                       placeholder="Contraseña">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> No cerrar sesión
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <button type="submit" class="btn btn-default">Entrar</button>
+              </div>
+            </div>
+         </form>
+         
+         <h1 class="page-header">Formulario 4 <small>(horizontal limitando tamaño)</small></h1>
+         <form class="form-horizontal col-md-6 col-md-offset-3" role="form">
+            <div class="form-group">
+              <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
+              <div class="col-lg-10">
+                <input type="email" class="form-control" id="ejemplo_email_3"
+                       placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_password_3" class="col-lg-2 control-label">Contraseña</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="ejemplo_password_3" 
+                       placeholder="Contraseña">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> No cerrar sesión
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <button type="submit" class="btn btn-default">Entrar</button>
+              </div>
+            </div>
+         </form>
+         
+         <div class="row">
+            &nbsp;
+         </div>
+         
+         <h1 class="page-header">Formulario 5 <small>(haciendo algunas pruebas...)</small></h1>
+         <form role="form" class="form-horizontal col-md-6 col-md-offset-3">
+            <div class="form-group">
+               <label for="nombre" class="col-md-2 control-label">Nombre:</label>
+               <div class="col-md-10">
+                  <input id="nombre" type="text" class="form-control"/>
+               </div>
+            </div>
+            <div class="form-group">
+               <label for="area" class="col-md-2 control-label">Textarea:</label>
+               <div class="col-md-10">
+                  <textarea class="form-control" rows="3" id="area"></textarea>
+               </div>
+            </div>
+            
+            <label>Checks:</label>
+            <div class="form-group">
+               <div class="checkbox col-md-9 col-md-offset-2">
+                  <label>
+                    <input type="checkbox" value="">
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+               </div>
+               <div class="col-md-9 col-md-offset-2">
+                  <label class="checkbox-inline">
+                     <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                   </label>
+                   <label class="checkbox-inline">
+                     <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                   </label>
+                   <label class="checkbox-inline">
+                     <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                   </label>
+               </div>
+            </div>
+             
+            <label>Radios:</label>
+            
+            <div class="form-group">
+               <div class="radio col-md-9 col-md-offset-2">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+               </div>
+               <div class="radio col-md-9 col-md-offset-2">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                  </label>
+               </div>
+            </div>
+            
+            <div class="form-group">
+               <div class="col-md-10 col-md-offset-2">   
+                  <select class="form-control"> 
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                   </select>  
+               </div>         
+            </div>
+            
+            <div class="form-group">                 
+               <div class="col-md-10 col-md-offset-2">          
+                  <select multiple class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>        
+               </div>            
+            </div>
+            
+         <div class="row">&nbsp;</div>
+            <div class="form-group">
+               <datalist id="countriesList">
+                  <option>Spain</option>
+                  <option>France</option>
+               </datalist>
+               <label for="countries" class="control-label col-md-2">Countries:</label>
+               <div class="col-md-10">
+                  <input list="countriesList" id="countries" class="form-control">
+               </div>               
+            </div>
+
+         </form>
+         
+         <div class="row">&nbsp;</div>
+         
+         <h1 class="page-header"> Formulario 6 <small>( texto en p <code>control-static</code>)</small></h1>
+         
+         <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="col-md-2 control-label">Email</label>
+              <div class="col-md-10">
+                <p class="form-control-static">email@ejemplo.com</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="col-md-2 control-label">Contraseña</label>
+              <div class="col-md-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="aaa" class="col-md-2 control-label">Campo:</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="aaa" placeholder="Campo deshabilitado" disabled>
+              </div>
+            </div>
+            
+            <fieldset disabled class="col-md-6 col-md-offset-3">
+               <legend>Conjunto de campos deshabilitados.</legend>
+              <div class="form-group">
+                <label for="disabledTextInput">Campo deshabilitado</label>
+                <input type="text" id="campoDeshabilitado" class="form-control" 
+                       placeholder="Campo deshabilitado">
+              </div>
+              <div class="form-group">
+                <label for="listaDeshabilitada">Lista deshabilitada</label>
+                <select id="listaDeshabilitada" class="form-control">
+                  <option>Lista deshabilitada</option>
+                </select>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> No puedes pinchar esta opción
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </fieldset>
+            
+            <div class="row">&nbsp;</div>
+            <div class="row">&nbsp;</div>            
+            
+            <div class="form-group has-success">
+               <label class="col-md-2 control-label" for="inputSuccess">Campo con un valor válido</label>
+              <div class="col-md-10">
+               <input type="text" class="form-control" id="campoValido">
+              </div>
+             </div>
+             <div class="form-group has-warning">
+               <label class="col-md-2 control-label" for="inputWarning">Campo con una advertencia</label>
+              <div class="col-md-5">
+               <input type="text" class="form-control input-lg" id="campoAdvertencia">
+              </div>
+             </div>
+             <div class="form-group has-error">
+               <label class="col-md-2 control-label" for="inputError">Campo con un error</label>
+              <div class="col-md-8">
+               <input type="text" class="form-control input-sm" id="campoError"><span class="help-block">Un texto de ayuda que ocupa varias líneas porque es muy largo, pero aún así se ve bien gracias a los estilos de Bootstrap.</span>
+              </div>
+             </div>
+            
+            
+            <div class="form-group">
+               <div class="col-md-8 col-md-offset-2">
+                  <!-- Botón normal -->
+                  <button type="button" class="btn btn-default">Normal</button>
+                   
+                  <!-- Muestra el botón de forma destacada para descubrir fácilmente
+                       el botón principal dentro de un grupo de botones -->
+                  <button type="button" class="btn btn-primary">Destacado</button>
+                   
+                  <!-- Indica una acción exitosa o positiva -->
+                  <button type="button" class="btn btn-success">Éxito</button>
+                   
+                  <!-- Botón pensado para los mensajes con alertas informativas -->
+                  <button type="button" class="btn btn-info">Información</button>
+                   
+                  <!-- Indica que hay que tener cuidado con la acción asociada al botón -->
+                  <button type="button" class="btn btn-warning">Advertencia</button>
+                   
+                  <!-- Indica una acción negativa o potencialmente peligrosa -->
+                  <button type="button" class="btn btn-danger">Peligro</button>
+                   
+                  <!-- Resta importancia al botón haciéndolo parecer un simple enlace,
+                       aunque conserva tu comportamiento original de botón -->
+                  <button type="button" class="btn btn-link">Enlace</button>
+                  
+                  <br/>
+                  <br/>
+                  <p>
+                     <button type="button" class="btn btn-primary btn-lg">Botón grande</button>
+                     <button type="button" class="btn btn-default btn-lg">Botón grande</button>
+                   </p>
+                   <p>
+                     <button type="button" class="btn btn-primary">Botón normal</button>
+                     <button type="button" class="btn btn-default">Botón normal</button>
+                   </p>
+                   <p>
+                     <button type="button" class="btn btn-primary btn-sm">Botón pequeño</button>
+                     <button type="button" class="btn btn-default btn-sm">Botón pequeño</button>
+                   </p>
+                   <p>
+                     <button type="button" class="btn btn-primary btn-xs">Botón extra pequeño</button>
+                     <button type="button" class="btn btn-default btn-xs">Botón extra pequeño</button>
+                   </p>
+                   
+                   <button type="button" class="btn btn-primary btn-lg btn-block">Botón de bloque</button>
+                   <button type="button" class="btn btn-default btn-lg btn-block">Botón de bloque</button>
+                   <p>&nbsp;</p>
+                  <p>Botones presionados:</p>
+                  <p>
+                     <button type="button" class="btn btn-primary btn-lg active">Botón principal</button>
+					 <button type="button" class="btn btn-default btn-lg active">Botón</button>
+                  </p>
+                  
+                  <p>Botones activos a partir de enlaces:</p>
+                  <p>
+                     <a href="#" class="btn btn-primary btn-lg active" role="button">Enlace principal</a>
+					 <a href="#" class="btn btn-default btn-lg active" role="button">Enlace</a>
+                  </p>
+                  
+                  <p>Botones desactivados (cambia el mecanismo según si es button o link:</p>
+                  <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Botón principal</button>
+                  <button type="button" class="btn btn-default btn-lg" disabled="disabled">Botón</button>
+                  <a href="#" class="btn btn-primary btn-lg disabled" role="button">Enlace principal</a>
+                  <a href="#" class="btn btn-default btn-lg disabled" role="button">Enlace</a>
+                  
+                  <p>&nbsp;</p>
+                  <p>Heterogeneidad de mecanismos para botones:</p>
+                  <p>
+                     <a class="btn btn-default" href="#" role="button">Enlace</a>
+                     <button class="btn btn-default" type="submit">Botón</button>
+                     <input class="btn btn-default" type="button" value="Campo input">
+                     <input class="btn btn-default" type="submit" value="Enviar">
+                  </p>
+               </div>
+            </div>
+         </form>
+		 <a class="btn btn-default" href="../clase03-07.html" role="button">Volver</a>
+      </div>
+        
+      <!-- jQuery (necesario para los plugins de Bootstrap, que emplean JavaScript) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- Incluye todos los plugins compilados -->
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

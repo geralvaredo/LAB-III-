@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Uso de Manejadores de Eventos </title>
+
+		<script type="text/javascript">
+
+			window.onload = function()
+			{
+				//OBTENGO EL ELEMENTO 'BOTON'
+				var boton = document.getElementById('btnSemantico');
+				
+				//ASIGNO EL MANEJADOR AL EVENTO 'ONCLICK'
+				boton.onclick = MostrarMensajeSemantico;
+			}
+
+			function MostrarMensaje()
+			{
+				alert("Mensaje mostrado por una \"Funci\u00F3n Externa\".");
+				
+				VisualizarMensaje();
+			}
+			
+			function MostrarMensajeSemantico()
+			{
+				alert('Mensaje mostrado con un "Manejador Sem\u00E1ntico".');
+			}
+			
+			function VisualizarMensaje()
+			{
+				document.getElementById("mensaje").style.visibility = "visible";
+			}			
+			
+		</script>
+	
+	</head>
+	
+	<body>
+	
+	<div >
+		<p > 
+			Manejadores sobre atributos <br/>
+		</p>
+
+		<input type="button" value="Click aqu&iacute;" onclick="alert('Mensaje mostrado en el elemento.');" />
+		
+		<p > 
+			Manejadores como funciones javascript externas <br/>
+		</p>
+		
+		<input id="btnFuncionExterna" type="button" value="Click aqu&iacute;" onclick="MostrarMensaje()" />
+
+		<p > Manejadores "Sem&aacute;nticos" <br/>
+			
+			<p id="mensaje" style="visibility:hidden;">
+				Primero se agrega un identificador &uacute;nico al elemento (atributo id). <br/>			
+				Segundo se crea la funci&oacute;n JavaScript encargada de manejar el evento. <br/>
+				Por &uacute;ltimo, se asigna la funci&oacute;n externa al evento correspondiente 
+				en el elemento deseado.
+			</p>
+		</p>
+				
+		<input id="btnSemantico" type="button" value="Click aqu&iacute;"  />
+
+	</div>
+		
+	</body>
+	
+<html>

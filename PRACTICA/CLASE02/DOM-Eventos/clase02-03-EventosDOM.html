@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Uso de Eventos </title>
+
+		<link type="text/css" href="CSS/parrafos.css" rel="stylesheet" />
+		
+		<script type="text/javascript">
+									
+			window.onload = function()
+			{
+				//OBTENGO  LOS ELEMENTOS 'P'
+				var parrafos = document.getElementsByTagName('P');				
+				var i;
+
+				//AGREGO MANEJADORES SEMANTICOS A LOS EVENTOS 
+				//'ONMOUSEOVER' Y 'ONMOUSEOUT' DE TODOS LOS  TAG 'P'				
+				for(i = 0; i < parrafos.length; i++)
+				{
+					parrafos[i].onmouseover = AumentarFontSize;
+					parrafos[i].onmouseout = DisminuirFontSize;
+				}
+				
+				//AGREGO MANEJADORES SEMANTICOS A LOS EVENTOS 'ONCLICK'
+				//DE LOS DOS PRIMEROS TAG 'P'
+				parrafos[0].onclick = CambiarLetrasMinusculas;
+				parrafos[1].onclick = CambiarLetrasMayusculas;
+
+				//AGREGO MANEJADORES SEMANTICOS A LOS EVENTOS 'ONCLICK'
+				//DE LOS DOS ULTIMOS TAG 'P'
+				parrafos[2].onclick = CambiarClaseCSS;
+				parrafos[3].onclick = CambiarClaseCSS;
+				
+			}						
+/*------------------------------FUNCIONES COMUNES--------------------------------------------*/			
+			function AumentarFontSize()
+			{
+				this.style.fontSize = 20;
+			}
+
+			function DisminuirFontSize()
+			{
+				this.style.fontSize = 15;
+			}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------FUNCIONES PARA LOS PRIMEROS TAG P----------------------*/			
+			function CambiarLetrasMayusculas()
+			{
+				var textoViejo = this.innerHTML;
+				var textoNuevo = textoViejo.toUpperCase();
+				
+				this.innerHTML = textoNuevo;
+			}
+
+			function CambiarLetrasMinusculas()
+			{
+				var textoViejo = this.innerHTML;
+				var textoNuevo = textoViejo.toLowerCase();
+				
+				this.innerHTML = textoNuevo;
+			}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------FUNCIONES PARA LOS ULTIMOS TAG P------------------------*/						
+			function CambiarClaseCSS()
+			{
+				var clase = this.className;
+				
+				if(clase == 'contorno')
+					this.className = 'rojo';
+				else
+					this.className = 'contorno';
+			}
+/*------------------------------------------------------------------------------------------------------------*/
+			
+		</script>
+	
+	</head>
+	
+	<body>
+	
+		<p id="parrafo1"> PRIMER TEXTO </p>
+		<p id="parrafo2"> segundo texto </p>
+		<p id="parrafo3" class="contorno"> Tercer texto </p>
+		<p id="parrafo4" class="rojo"> Cuarto Texto </p>
+			
+	</body>
+	
+<html>

@@ -1,0 +1,20 @@
+/*DEFINO UN ESTILO PARA TODOS LOS TAG 'P'*/
+p {
+	cursor: pointer;
+}
+
+/*APLICO SOLO A LOS TAG 'P' QUE TENGAN 'CLASS=CONTORNO'*/		
+p.contorno {
+	border: dotted;
+	border-color: green;
+	border-width: 2;
+	visibility: visible;			
+}
+
+/*APLICO SOLO A LOS TAG 'P' QUE TENGAN 'CLASS=ROJO'*/		
+p.rojo {
+	color: red;
+}
+
+/*RECORDAR QUE POR CASCADA, SE 'HEREDAN' LOS ESTILOS
+EN LAS CLASES DEL TAG 'P'*/

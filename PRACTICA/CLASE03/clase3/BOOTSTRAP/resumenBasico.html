@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Resumen controles básicos</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+		<style>
+			div[class^="col-"]:not(#ri) {
+				background-color: rgba(86,61,124,.15);
+				border: solid thin rgba(86,61,124,.2);
+			}
+			body {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			  }			 
+			.text-hide-replace {
+				border: 0;
+				color: transparent;
+				text-shadow: none;
+				background-image: url('rain.jpg') !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container" id="micont">
+			<h1 class="page-header">Cabecera <small>pequeña</small></h1>  
+			<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+			<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+			<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+			<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+			<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+
+			<h2 class="page-header">Formateo de texto</h2>
+			<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+			
+			<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+			
+			<p><small>Este contenido de texto se verá más pequeño y puede ser utilizado por ejemplo para "la letra pequeña" de la página.</small></p>			
+			<p>El siguiente trozo de texto <strong>se muestra en negrita</strong>.</p>
+			<p>El siguiente trozo de texto <em>se muestra en cursiva</em>.</p>
+			
+			<p class="text-left">Texto alineado a la izquierda.</p>
+			<p class="text-center">Texto centrado.</p>
+			<p class="text-right">Texto alineado a la derecha.</p>
+			<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+			<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+			<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+			<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+			
+			<p>Este texto contiene abreviaturas como <abbr title="señor">Sr.</abbr> y <abbr title="señora">Sra.</abbr></p>
+			<p>Esta página está escrita con <abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+			<p>El elemento <code>&lt;section&gt;</code> es uno de los nuevos elementos de HTML5.</p>
+			<pre class="pre-scrollable">&lt;p&gt;Así se escribe un párrafo de texto&lt;/p&gt;</pre>
+			
+			<div class="container" style="margin-top: 20px">         
+				<div class="center-block" style="width:200px;">
+				¿Centrado? Ojo, es necesario que el tamaño de este div esté acotado; en caso contrario, ocuparía todo el contenido del padre, width del 100%, y no tendría espacio para aplicar el margin auto correspondiente.
+				</div>
+			</div>
+			
+			<h2 class="page-header">Direcciones</h2>
+			<address>
+				<strong>Empresa S.A.</strong><br>
+				Avenida Principal 123<br>
+				Ciudad, Provincia 00000<br>
+				<abbr title="Phone">Tel:</abbr> 9XX 123 456
+			</address>
+			<address>
+				<strong>Nombre Apellido</strong><br>
+				<a href="mailto:#">nombre.apellido@ejemplo.com</a>
+			</address>
+
+			<h2 class="page-header">Bloques</h2>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			</blockquote>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				<small>Frase célebre de <cite title="Nombre Apellidos">Nombre Apellidos</cite></small>
+			</blockquote>
+
+			<h2 class="page-header">Listas</h2>
+			<ul>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Consectetur adipiscing elit</li>
+				<li>Integer molestie lorem at massa</li>
+				<li>Facilisis in pretium nisl aliquet</li>
+				<li>Nulla volutpat aliquam velit
+					<ul>
+						<li>Phasellus iaculis neque</li>
+						<li>Purus sodales ultricies</li>
+						<li>Vestibulum laoreet porttitor sem</li>
+						<li>Ac tristique libero volutpat at</li>
+					</ul>
+				</li>
+				<li>Faucibus porta lacus fringilla vel</li>
+				<li>Aenean sit amet erat nunc</li>
+				<li>Eget porttitor lorem</li>
+			</ul>
+
+			<ol>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Consectetur adipiscing elit</li>
+				<li>Integer molestie lorem at massa</li>
+				<li>Facilisis in pretium nisl aliquet</li>
+				<li>Nulla volutpat aliquam velit</li>
+				<li>Faucibus porta lacus fringilla vel</li>
+				<li>Aenean sit amet erat nunc</li>
+				<li>Eget porttitor lorem</li>
+			</ol>
+
+			<ul class="list-inline">
+				<li>Lorem ipsum</li>
+				<li>Phasellus iaculis</li>
+				<li>Nulla volutpat</li>
+			</ul>
+			
+			<dl>
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+			</dl>
+
+			<dl class="dl-horizontal">
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+				<dt>Felis euismod semper eget lacinia</dt>
+				<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+			</dl>
+
+			<h2 class="page-header">Tablas</h2>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table-striped table-hover table-condensed">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table-striped table-hover table-condensed">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="success">
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+					<tr class="warning">
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr class="active">
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr class="danger">
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Cabecera de tabla</th>
+						<th>Cabecera de tabla</th>
+						<th>Cabecera de tabla</th>
+						<th>Cabecera de tabla</th>
+						<th>Cabecera de tabla</th>
+						<th>Cabecera de tabla</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+						<td>Celda de tabla</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Cabecera de tabla</th>
+							<th>Cabecera de tabla</th>
+							<th>Cabecera de tabla</th>
+							<th>Cabecera de tabla</th>
+							<th>Cabecera de tabla</th>
+							<th>Cabecera de tabla</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+						</tr>
+						<tr>
+						<td>2</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+							<td>Celda de tabla</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<h2 class="page-header">Imagenes</h2>
+		<div class="container" style="padding-top: 1em;">
+			<img data-src="holder.js/140x140" class="img-rounded">
+			&nbsp;&nbsp;
+			<img data-src="holder.js/140x140" class="img-circle">
+			&nbsp;&nbsp;
+			<img data-src="holder.js/140x140" class="img-thumbnail">
+			<button type="button" class="close" aria-hidden="true">&times;</button>
+		</div>
+      
+		<div class="container" style="margin-top: 20px">
+			<div class="pull-left">
+				<img data-src="holder.js/140x140" class="img-circle">
+				</div>
+				<div class="pull-right">
+				<img data-src="holder.js/140x140" class="img-thumbnail">
+			</div>
+		</div>
+
+		<h2 class="page-header">Sistemas de Grillas</h2>
+		<div class="container" style="padding-top: 1em;" id="visibility">
+			<p class="text-muted">( redimensiona el navegador para ver cómo cambia la página )</p>
+			<h4>Visible en...</h4>
+			<p>Las marcas indican que ese elemento <strong>es visible</strong> en tu dispositivo.</p>
+			<div class="row responsive-utilities-test visible-on">
+				<div class="col-xs-6 col-sm-3">
+					<span class="hidden-xs">Extra pequeño</span>
+					<span class="visible-xs">✔ Visible en dispositivos extra pequeños</span>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<span class="hidden-sm">Pequeño</span>
+					<span class="visible-sm">✔ Visible en dispositivos pequeños</span>
+				</div>
+				<div class="clearfix visible-xs"></div>
+				<div class="col-xs-6 col-sm-3">
+					<span class="hidden-md">Mediano</span>
+					<span class="visible-md">&#10004; Visible en dispositivos medianos</span>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<span class="hidden-lg">Grande</span>
+					<span class="visible-lg">✔ Visible en dispositivos grandes</span>
+				</div>
+			</div>
+			<div class="row responsive-utilities-test visible-on">
+				<div class="col-xs-6 col-sm-6">
+					<span class="hidden-xs hidden-sm">Extra pequeño y pequeño</span>
+					<span class="visible-xs visible-sm">✔ Visible en dispositivos extra pequeños y pequeños</span>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="hidden-md hidden-lg">Mediano y grande</span>
+					<span class="visible-md visible-lg">✔ Visible en dispositivos medianos y grandes</span>
+				</div>
+				<div class="clearfix visible-xs"></div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="hidden-xs hidden-md">Extra pequeño y mediano</span>
+					<span class="visible-xs visible-md">✔ Visible en dispositivos extra pequeños y medianos</span>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="hidden-sm hidden-lg">Pequeño y grande</span>
+					<span class="visible-sm visible-lg">✔ Visible en dispositivos pequeños y grandes</span>
+				</div>
+				<div class="clearfix visible-xs"></div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="hidden-xs hidden-lg">Extra pequeño y grande</span>
+					<span class="visible-xs visible-lg">✔ Visible en dispositivos extra pequeños y grandes</span>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="hidden-sm hidden-md">Pequeño y mediano</span>
+					<span class="visible-sm visible-md">✔ Visible en dispositivos pequeños y medianos</span>
+				</div>
+			</div>
+			<h4>Oculto en...</h4>
+			<p>En este caso, las marcas verdes indican que el elemento <strong>está oculto</strong> en tu dispositivo.</p>
+			<div class="row responsive-utilities-test hidden-on">
+				<div class="col-xs-6 col-sm-3">
+					<span class="visible-xs">Extra pequeño</span>
+					<span class="hidden-xs">✔ Oculto en dispositivos extra pequeños</span>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<span class="visible-sm">Pequeño</span>
+					<span class="hidden-sm">✔ Oculto en dispositivos pequeños</span>
+				</div>
+					<div class="clearfix visible-xs"></div>
+					<div class="col-xs-6 col-sm-3">
+				<span class="visible-md">Mediano</span>
+				<span class="hidden-md">✔ Oculto en dispositivos medianos</span>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<span class="visible-lg">Grande</span>
+					<span class="hidden-lg">✔ Oculto en dispositivos grandes</span>
+				</div>
+			</div>
+			<div class="row responsive-utilities-test hidden-on">
+				<div class="col-xs-6 col-sm-6">
+					<span class="visible-xs visible-sm">Extra pequeño y pequeño</span>
+					<span class="hidden-xs hidden-sm">✔ Oculto en dispositivos extra pequeños y pequeños</span>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="visible-md visible-lg">Mediano y grande</span>
+					<span class="hidden-md hidden-lg">✔ Oculto en dispositivos medianos y grandes</span>
+				</div>
+				<div class="clearfix visible-xs"></div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="visible-xs visible-md">Extra pequeño y mediano</span>
+					<span class="hidden-xs hidden-md">✔ Oculto en dispositivos extra pequeños y medianos</span>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="visible-sm visible-lg">Pequeño y grande</span>
+					<span class="hidden-sm hidden-lg">✔ Oculto en dispositivos pequeños y grandes</span>
+				</div>
+				<div class="clearfix visible-xs"></div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="visible-xs visible-lg">Extra pequeño y grande</span>
+					<span class="hidden-xs hidden-lg">✔ Oculto en dispositivos extra pequeños y grandes</span>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<span class="visible-sm visible-md">Pequeño y mediano</span>
+					<span class="hidden-sm hidden-md">✔ Oculto en dispositivos pequeños y medianos</span>
+				</div>
+			</div>
+			<br/>
+			<a class="btn btn-default" href="../clase03-07.html" role="button">Volver</a>
+		</div>
+      
+	</body>
+</html>

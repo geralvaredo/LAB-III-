@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Aprendiendo DOM--Atributos</title>
+
+		<script type="text/javascript">
+
+		window.onload=function()
+		{
+			alert('Obtengo un elemento por su \'ID\'.\nUtilizo "document.getElementById(\'nombreID\')".');
+			var p = document.getElementById("introduccion");
+
+			alert('Muestro el contenido del elemento.\n'+p.innerHTML);
+
+			alert('Obtengo todos los elementos por su \'NOMBRE DE TAG\'.\nUtilizo "document.getElementsByTagName(\'nombreTAG\')".');
+			var parrafos = document.getElementsByTagName('p');
+
+			for(var i=0; i<parrafos.length; i++)
+				alert('array['+i+'] = '+parrafos[i].innerHTML);
+		}	
+
+		</script>
+
+	</head>
+	<body>
+			<p id="introduccion" >**Aprendiendo DOM**</p>
+			<p>DOM es sencillo de aprender.</p>
+			<p>Adem&aacute;s, DOM es muy potente.</p>
+	</body>
+</html>
