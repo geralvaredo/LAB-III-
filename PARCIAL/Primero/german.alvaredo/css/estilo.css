@@ -1,0 +1,125 @@
+.caja {
+        position : absolute;
+        top: 5% ;
+        left: 30% ;        
+        background-color:#FF934D ;        
+        padding: 40px ;
+        border-radius: 6px ; 
+        animation-name: aparecer;
+    animation-duration: 2s;       
+}
+
+@keyframes aparecer
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+.campos{
+        width: 400px ;
+        padding: 5px ;        
+        margin-top: 10px ;
+        margin-bottom: 20px ; 
+        font-size: 20px ;
+}
+.agregar{
+         width: 100px;
+         height: 30px;
+}
+.cerrar{
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         margin-bottom: 10px;
+         margin-top: -35px;
+         margin-left: -35px;
+         background-color: #3498DB;
+         color: white;
+         font-size: 20px;
+         border-radius: 5px ;  
+               
+}
+.cerrar:hover{
+    background-color: rgb(248, 182, 1);
+}
+.boton{
+            width: 200px ;
+            height: 30px; 
+            color:  white ;            
+            background-color:#3498DB  ;
+            border-radius: 5px ;    
+        }
+.boton:hover{
+    background-color: rgb(248, 182, 1);
+}        
+
+.etiquetas {
+             color: white;
+             font-style: italic ;
+             font-weight: bold;
+}
+
+
+.cabecera {
+        background-color: #3498DB;
+        color:white;
+        font-size: 25px;
+        
+}
+.tabla{
+         width: 100%;
+         margin: 0 auto;    
+         text-align:center;         
+}
+
+
+#cuerpo{
+    font-size: 20px;
+}
+#tabla tbody tr:hover{
+    background-color: rgb(248, 182, 1);
+}
+#cuerpo tr:nth-child(odd){
+    background-color: rgb(252, 252, 252);         
+}
+#cuerpo tr:nth-child(even){
+    background-color: rgb(202, 224, 224)  ;
+}
+
+h1{
+    color:teal;   
+}
+
+
+.loading
+{
+    position: relative;
+}
+
+
+.loading::after
+{
+    content: url(../img/spinner2.gif);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    opacity: 0.90;
+}
+
+input:invalid {
+    border: 1px solid red;
+  }
+	
+	
