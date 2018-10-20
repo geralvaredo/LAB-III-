@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js\node_modules\jquery\dist\jquery.min.js"></script>
+    <script>
+     /*$(document).ready(function(){
+         alert($("#iNombre").val());
+         $("p").html("texto");
+         $("p").show();
+         $("p").hide();    
+        });
+      $.get(url,function(data, status){
+          alert("Data:" + data + "\nStatus" + status);
+      });
+      $("#btn").click( function(){
+        $.post(url,{
+                 nombre: "",
+                 apellido: "",
+                 sexo : ""   
+      },
+      function (data,status){
+
+      });  
+      });
+
+      $.ajax({
+        url : "",
+        data: {} ,
+        type : "POST",
+        success : function (data,status){
+            alert("");   
+      },
+        error: function(data,status){
+
+        },
+        async : false, 
+        timeout : 10000
+        
+         
+
+      });*/
+      $(document).ready( function () {
+        $("input").change( function(){
+        if(this.files && this.files[0]){
+            var freader = new FileReader();
+            freader.addEventListener("load", function(e){
+                console.log(e.target.result);
+                $("#Iavatar").attr("src",e.target.result);
+            });
+            freader.readAsDataURL(this.files[0]);
+        }
+      });
+
+
+      });
+      
+      //ajax effects 
+     
+    //slideToggle
+    // npm init -y
+    // npm install jquery
+    // npm install jquery --save
+    //cdns
+    </script>
+</head>
+<body>
+    <img id="Iavatar"  height="150">
+    <!--input id="iNombre" type="text" value="Input Nombre"-->
+    <input type="file" name="avatar" id="avatar" accept="image/png, Image/jpeg ">
+    <p></p>
+</body>
+</html>
